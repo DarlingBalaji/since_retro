@@ -1,0 +1,189 @@
+/* You can add global styles to this file, and also import other style files */
+$secondary: #fff;
+$primary: #0B9ED0;
+$black: #000;
+$font14: 14px;
+$font16: 16px;
+// $font18: 18px;
+$fontweight4: 400;
+$fontweight5: 500;
+$fontweight6: 600;
+$fontweight8: 800;
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+// Header Section
+.Header_section{
+    background-color: $primary;
+    .navbar.bg-light{
+        background-color: $primary!important;
+        color: $secondary;
+    }
+    nav .navbar-brand,
+    nav .navbar-nav .nav-item .nav-link{
+        color: $secondary;
+    }
+    nav .navbar-brand{
+        &:hover{
+            color: $secondary;
+        }
+    }
+    .Cantact_details{
+        color: $secondary;
+        i{
+            padding-right: 8px;
+        }
+    }
+}
+// Header Section
+
+
+// Homepage Section
+.Homepage_Section{
+    .Homepage_Heading{
+        color: $black;
+        font-size: 28px;
+        font-weight: $fontweight6;
+        text-align: center;
+        letter-spacing: 1px;
+        margin: 40px 0 25px;
+    }
+    .Banner_Image img{
+        width: 100%;
+        border: 2px solid $secondary;
+        margin: 20px 0px 2px;
+    }
+    .Banner_LongImage{
+        height: 400px;
+    }
+}
+// Homepage Section
+
+// Product Section
+.ProductItem{
+    height: 100%;
+    box-shadow: 0px 1px 20px 1px #e8e8e8;
+    border-radius: 20px;
+    background-color: transparent;
+    // border-bottom-right-radius: 20px;
+    margin: 10px 0 40px 0;
+    .Product_Image img{
+        width: 100%;
+        cursor: pointer;        
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    .Product_Name{
+        padding: 10px 0px;
+        margin-bottom: 0px;
+    }
+    .Product_Name{
+        color: $black;
+        font-size: $font14;
+        font-weight: $fontweight4;
+        text-decoration: none;
+        cursor: pointer;
+        padding: 0px 10px;
+        &:hover{
+            color: $primary;
+        }
+    }
+    .Product_Price{
+        color: $black;
+        font-size: 18px;
+        font-weight: $fontweight4;
+        text-align: center;
+        padding: 2px 10px 0 10px;
+    }
+}
+// Product Section
+
+// Button Section
+.Buy_Now_Btn{
+    background-color: $primary;
+    border: 1px solid $primary;
+    border-radius: 30px;
+    color: $secondary;
+    font-size: $font14;
+    font-weight: $fontweight5;
+    padding: 2px 15px;
+    transition: ease-in-out 0.4s;
+    &:hover{
+        background-color: #70ceef;
+        border: 1px solid #70ceef;
+    }
+}
+// Button Section
+
+
+// Footer Section
+// Footer Section
+.Footer_section{
+    background-color: $primary;
+    padding: 40px 0 20px;
+    .Footer_log_image img{
+        text-align: center;
+        width: 100px;
+        height: 100px;
+        border-radius: 20px;
+    }
+    .Footer_Desc{
+        color: $secondary;
+        font-size: 14px;
+        font-weight: 400;
+        margin-top: 10px;
+        line-height: 20px;
+    }
+    .Footer_Heading{
+        color: $secondary;
+        font-size: $font16;
+        font-weight: $fontweight5;
+        text-align: left;
+        letter-spacing: 1px;
+        margin-bottom: 6px;
+    }
+    .Footer_Item{
+        padding-left: 0px;
+        list-style-type: none;
+        .Footer_List{
+            color: $secondary;
+            font-size: $font14;
+            font-weight: $fontweight4;
+            cursor: pointer;
+            transition: ease-in-out 0.7s;
+            &:hover{
+                color: #000;
+            }
+        }
+    }
+    .Footer_email,
+    .Footer_phonenumber{
+        color: $secondary;
+        font-size: $font14;
+        margin-bottom: 0px;
+    }
+    .SocialLinks_Item{
+        padding-left: 0px;
+        list-style-type: none;
+        .SocialLinks_List{
+            color: $secondary;
+            font-size: $font14;
+            cursor: pointer;
+            transition: ease-in-out 0.7s;
+            &:hover,
+            &:hover span.SocialIcons i{
+                color: #000;
+            }
+        }
+    }
+    span.SocialIcons i{
+        color: $secondary;
+        font-size: $font14;
+        padding-right: 8px;
+        width: 25px;
+        transition: ease-in-out 0.7s;
+    }
+    
+}
+// Footer Section
